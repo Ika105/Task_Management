@@ -360,7 +360,7 @@
         // API Functions
         async function loadTasks() {
             try {
-                const response = await fetch('/tasks');
+                const response = await fetch('//taskmanagement-production-9d1c.up.railway.app/tasks');
                 const data = await response.json();
                 
                 if (response.ok) {
