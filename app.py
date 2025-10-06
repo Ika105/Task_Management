@@ -38,7 +38,7 @@ app.register_blueprint(auth_bp, url_prefix='/auth')
 
 
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     try:
         # Connect to MongoDB
         mongo_uri = os.getenv('MONGO_DB_URI', 'mongodb://localhost:27017/')
