@@ -11,7 +11,7 @@ import os
 
 load_dotenv()   
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Configure CORS
 CORS(app, resources={
