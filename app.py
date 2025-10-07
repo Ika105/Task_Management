@@ -38,7 +38,7 @@ app.register_blueprint(auth_bp, url_prefix='/auth')
 
 
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     try:
         # Connect to MongoDB
         mongo_uri = os.getenv('MONGO_DB_URI', 'mongodb://localhost:27017/')
@@ -52,5 +52,5 @@ if __name__ == '_main_':
         print("Note: Make sure MongoDB is running on your system")
    
     port = int(os.getenv("PORT", 5000))
-    print(f"🚀 Starting Flask app on port {port}  ❇")
-    app.run(host="0.0.0.0", debug=True, port=port)
+    print(f"🚀 Starting Flask app on port {port}  ❇️")
+    app.run(host="0.0.0.0", debug=True, port=port)     

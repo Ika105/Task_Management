@@ -363,7 +363,7 @@
         // API Functions
         async function loadTasks() {
             try {
-                const response = await fetch('${API_BASE_URL}/tasks', {
+                const response = await fetch(`${API_BASE_URL}/tasks`, {
                     credentials: 'include'
                 });
                 const data = await response.json();
@@ -382,7 +382,7 @@
 
         async function createTask(taskData) {
             try {
-                const response = await fetch('${API_BASE_URL}/tasks', {
+                const response = await fetch(`${API_BASE_URL}/tasks`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -409,7 +409,7 @@
 
         async function updateTask(taskId, taskData) {
             try {
-                const response = await fetch('${API_BASE_URL}/tasks/${taskId}', {
+                const response = await fetch(`${API_BASE_URL}/tasks/${taskId}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
@@ -436,7 +436,7 @@
 
         async function deleteTask(taskId) {
             try {
-                const response = await fetch('${API_BASE_URL}/tasks/${taskId}', {
+                const response = await fetch(`${API_BASE_URL}/tasks/${taskId}`, {
                     method: 'DELETE',
                     credentials: 'include'
                 });

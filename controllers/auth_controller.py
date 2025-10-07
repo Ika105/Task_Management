@@ -106,3 +106,5 @@ def get_current_user():
         "email": user.email,
     }
     return jsonify({"user": user_data}), 200
+    
+    
